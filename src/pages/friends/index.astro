@@ -111,7 +111,7 @@ const posts = (await getCollection('friends')).sort(
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`/friends/${post.slug}/`}>
+								<a href={`/wishlist-static/friends/${post.slug}/`}>
 									<img width={720} height={360} src={post.data.heroImage} alt="" transition:name={`hero-${post.slug}`} />
 									<h4 class="title" transition:name={`title-${post.slug}`}>{post.data.title}</h4>
 								</a>
