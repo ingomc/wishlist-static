@@ -9,7 +9,13 @@ const { pathname } = Astro.url;
 // Matches path and subpath for Events etc.
 console.log(pathname);
 console.log(href);
-const isActive = href === pathname;
+// Funktion zum Entfernen des Trailing Slashes (falls vorhanden)
+const normalizePath = (path: string): string => {
+  return path.endsWith('/') ? path.slice(0, -1) : path;
+};
+
+// Normalisierte URLs für Vergleich
+const isActive: boolean = href ? normalizePath(href.toString()) === normalizePath(pathname) : false;
 ---
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
