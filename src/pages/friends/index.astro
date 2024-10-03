@@ -11,10 +11,23 @@ const posts = (await getCollection('friends')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="de">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
+
+			h1 {
+				width: 960px;
+				max-width: calc(100% - 3em);
+				margin: auto;
+				padding: 1em 1em;
+				font-size: calc(1rem + 2vw);
+				text-align: center;
+				text-wrap: pretty;
+			}
+			main {
+				width: 960px;
+			}
 			main {
 				width: 960px;
 			}
@@ -28,6 +41,9 @@ const posts = (await getCollection('friends')).sort(
 			}
 			ul li {
 				width: calc(50% - 1rem);
+			}
+			ul li + li {
+				margin-top: 2em;
 			}
 			ul li * {
 				text-decoration: none;
@@ -86,6 +102,9 @@ const posts = (await getCollection('friends')).sort(
 	</head>
 	<body>
 		<Header />
+		<h1>
+			Was ich mir von meinen Freunden wünschen tu ...
+		</h1>
 		<main>
 			<section>
 				<ul>
