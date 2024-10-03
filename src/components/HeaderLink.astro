@@ -14,6 +14,8 @@ const isActive = href === pathname;
 
 <a href={href} class:list={[className, { active: isActive }]} {...props}>
 	<slot />
+	<span>href: {href}</span>
+	<span>pathname: {pathname}</span>
 </a>
 <style>
 	a {
