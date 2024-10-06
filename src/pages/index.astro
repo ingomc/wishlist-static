@@ -76,6 +76,9 @@ const posts = (await getCollection('wish')).sort(
 			ul li a:hover .date {
 				color: rgb(var(--accent));
 			}
+			ul a img {
+				box-shadow: var(--box-shadow-mini);
+			}
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
