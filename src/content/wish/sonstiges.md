@@ -2,8 +2,8 @@
 title: 'Sonstigen Krimskrams'
 description: 'Kleinigkeiten und Zeugs für meinen Bday'
 pubDate: 'Jul 08 2022'
-heroImage: '/wishlist-static/grillreiniger.jpg'
-link: 'https://www.amazon.de/gp/product/B01CU5RI0W/'
+heroImage: '/wishlist-static/sonstiges.jpg'
+link: ''
 ---
 
 ## Andere Gute Chips
